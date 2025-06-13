@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES2022",
+    "lib": ["ES2022"]
+  },
+  "include": [
+    "ambient.d.ts"
+  ],
+  "files": [
+    "extension/drawing.ts",
+    "extension/enums.ts", 
+    "extension/extension.ts",
+    "extension/reordering.ts",
+    "extension/tiling.ts",
+    "extension/windowing.ts"
+  ]
+}

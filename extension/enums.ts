@@ -1,0 +1,1 @@
+export const window_spacing: number = 8;

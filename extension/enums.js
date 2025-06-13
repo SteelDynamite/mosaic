@@ -1,1 +1,1 @@
-export var window_spacing = 8;
+export const window_spacing = 8;

@@ -102,8 +102,11 @@ export default class MosaicExtension extends Extension {
                 global.display.get_focus_window(),
                 null,
                 true);
-            let workspace = window.get_workspace();
-            windowing.renavigate(workspace, windowing.get_monitor_workspace_windows(workspace, monitor).length === 0);
+
+            if (window.maximized_horizontally && window.maximized_vertically){
+                let workspace = window.get_workspace();
+                windowing.renavigate(workspace, windowing.get_monitor_workspace_windows(workspace, monitor).length === 0);   
+            }
         }
     }
     
